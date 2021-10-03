@@ -2,6 +2,7 @@
 :root {
     --main-font-color: rgb(19, 148, 7);
     --secondary-font-color: rgba(255, 255, 255, 0.767);
+    --text-shadow-color: rgba(251, 255, 3, 0.753);
   }
 
 * {
@@ -27,6 +28,8 @@ a:focus{
     text-align: center;
     color: var(--main-font-color);
   }
+
+
 
 .rainbow-text {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
