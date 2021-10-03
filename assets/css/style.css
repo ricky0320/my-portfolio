@@ -1,6 +1,8 @@
+/* Root and basic style*/
 :root {
-    --main-font-color: rgba(197, 5, 197, 0.945);
-}
+    --main-font-color: rgb(19, 148, 7);
+    --secondary-font-color: rgba(255, 255, 255, 0.767);
+  }
 
 * {
     box-sizing: border-box;
@@ -9,29 +11,53 @@
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.5);
-}
+    background-color: rgb(0, 0, 0);
+  }
 
 a {
     text-decoration: none;
-}
+  }
 
+a:visited{
+    color:none;
+  }
+
+a:focus{
+    color:blue;
+  }
+  
+.title-font {
+    font-size: 60px;
+    text-align: center;
+    color: var(--main-font-color);
+  }
+
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+/* Header Style */
 header {
-    padding: 20px 35px 20px 0px;
+    padding: 20px 35px 10px 0px;
     background-color: rgb(105, 9, 9);
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
+  }
 
 header h1 {
-    background-color:rgb(3, 138, 138);
+    background-color:rgba(3, 138, 138, 0.753);
     padding:2px 20px;
     color: var(--main-font-color);
     font-size: 50px;
     font-weight: bold;
     font-style:italic;
-}
+    font-stretch: extra-condensed;
+  }
+
 header nav {
     margin: 10px 0;
   }
@@ -44,33 +70,115 @@ header nav ul {
     list-style: none;
   }
   
-  header nav ul li a {
+header nav ul li a {
     padding: 10px 15px;
     color: var(--main-font-color);
     font-weight: lighter;
     font-size: 2.4vw;
-    text-shadow: 0 0 10px rgba(109, 0, 0, 0.562);
+    text-shadow: 0 0 10px rgba(251, 255, 3, 0.445);
   }
   
-  header nav ul li a:hover {
+header nav ul li a:hover {
+    font-size: 2.8vw;
     color: black;
     border-radius: 15px;
     text-shadow: none;
   }
 
 
-  /* FOOTER STYLES */
+/* FOOTER STYLES */
 footer {
-    
-    padding: 40px 35px;
+    background-color: rgb(105, 9, 9);
+    color: var(--main-font-color);
+    padding: 40px 25px 10px 25px;
     width: 100%;
     display:flex;
     justify-content: space-between;
     flex-wrap:wrap;
   }
 
+footer h2 {
+    width: 100%;
+  }
 
+footer h2 a {
+    color: var(--main-font-color);
+}  
+
+footer h3 {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+}  
+
+
+/*About me section Style */
 .intro {
-    margin: 10px 0px;
-    padding: 80px;
+    margin: 0;
+    border:solid blue;
+    border-left: none;
+    border-right: none;
+    padding: 20px 10px;
+    background-image: url(../images/yuri-3.JPG);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+}
+
+.intro p {
+text-align: center;
+font-size: 20px;
+color: white;
+}
+
+.slogan1 {
+    color: var(--secondary-font-color);
+    font-size: 50px;
+    font-style: italic;
+    text-align: left;
+}
+
+.slogan2 {
+    color: var(--secondary-font-color);
+    font-size: 50px;
+    font-style: italic;
+    text-align: right;
+}
+
+.intro img {
+    width: 25%;
+}
+
+
+/* MY Projects section Style */
+.my-projects {
+    padding: 10px;
+}
+
+.projects {
+    color: var(--secondary-font-color);
+    margin: 20px 0;
+}
+
+.projects img {
+    width: 25%;
+}
+
+
+/* Contact section Style */
+.contact {
+    color: var(--secondary-font-color);
+    margin: 0;
+    padding: 10px;
+    border-top: solid blue;
+    border-bottom: solid blue;
+
+}
+
+.contact h3 {
+    font-size: 35px;
+}
+
+.contact address {
+    font-size:28px
 }
