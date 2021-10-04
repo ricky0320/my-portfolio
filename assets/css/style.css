@@ -121,7 +121,7 @@ footer h3 {
     padding: 20px 10px;
     background-image: url(../images/yuri-3.JPG);
     background-size: cover;
-    background-position: 80%;
+    background-position: 50%;
     background-attachment: fixed;
 }
 
@@ -238,7 +238,12 @@ color: white;
 
 /* Screen size smaller than 575px */
 @media screen and (max-width: 575px) {
-    
+    .intro {
+        background-image: url(../images/yuri-3.JPG);
+        background-size: cover;
+        background-position: 50%;
+        background-attachment: fixed;
+    }
     
     header h1 {
         font-size: 30px;
