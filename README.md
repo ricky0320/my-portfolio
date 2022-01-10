@@ -34,6 +34,10 @@ Linkedin: https://www.linkedin.com/in/ricky-leung-826a7713a/
 Github: https://github.com/ricky0320
 Email: ricxx0320@gmail.com
 ```
+
+## Resume
+https://drive.google.com/file/d/17pBV47XeAKw88WsXAJLE1Nvulev44Kba/view?usp=sharing
+
 ## Contribution
 &copy; 2021 Create by Ricky Leung
 
